@@ -1,0 +1,13 @@
+string = input()
+target_char = input()
+replacement_char = input()
+replaced = False
+modified_string = ""
+for char in string:
+    if char == target_char and not replaced:
+        modified_string += replacement_char
+        replaced = True
+    else:
+        modified_string += char
+print("Modified string:", modified_string)
+

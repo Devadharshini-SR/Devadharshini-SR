@@ -1,0 +1,14 @@
+array_size = int(input())
+array = []
+print(f"Input {array_size} elements in the array:", end=" ")
+for i in range(array_size):
+    element = int(input())
+    array.append(element)
+unique_elements = []
+for num in array:
+    if num not in unique_elements:
+        unique_elements.append(num)
+print("The unique elements found in the array are:")
+for num in unique_elements:
+    print(num, end=" ")
+

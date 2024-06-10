@@ -1,0 +1,25 @@
+size1 = int(input())
+size2 = int(input())
+if size1 != size2:
+    print("Arrays are not the same as they have different sizes.")
+else:
+    array1 = []
+    array2 = []
+    print("Enter elements for first array:")
+    for i in range(size1):
+        element = int(input(f"Enter element {i + 1}: "))
+        array1.append(element)
+    print("\nEnter elements for second array:")
+    for i in range(size2):
+        element = int(input(f"Enter element {i + 1}: "))
+        array2.append(element)
+    same = True
+    for i in range(size1):
+        if array1[i] != array2[i]:
+            same = False
+            break
+    if same:
+        print("\nArrays are the same.")
+    else:
+        print("\nArrays are not the same.")
+

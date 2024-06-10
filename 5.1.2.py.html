@@ -1,0 +1,16 @@
+array_size = int(input())
+array = []
+print("Enter the elements of the array:")
+for i in range(array_size):
+    element = input(f"Enter element {i + 1}: ")
+    array.append(element)
+search_element = input("Enter the element to search for: ")
+found = False
+for i, element in enumerate(array):
+    if element == search_element:
+        print(f"{search_element} found at position {i + 1}.")
+        found = True
+        break
+if not found:
+    print(f"{search_element} not found in the array.")
+

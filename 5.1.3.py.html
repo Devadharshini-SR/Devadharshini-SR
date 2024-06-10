@@ -1,0 +1,13 @@
+num_elements = int(input())
+largest = None
+smallest = None
+print("Enter the numbers:")
+for i in range(num_elements):
+    num = float(input(f"Enter number {i + 1}: "))
+    if largest is None or num > largest:
+        largest = num
+    if smallest is None or num < smallest:
+        smallest = num
+print(f"Largest number: {largest}")
+print(f"Smallest number: {smallest}")
+
